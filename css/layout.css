@@ -96,7 +96,7 @@ header .stuts span {
 /* style the label */
 h1 {
     color: #FAFAFA;
-    font: bold 80px 'Comic Sans MS',Arial;
+    font: bold 70px 'Comic Sans MS',Arial;
     text-align: center;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.85), 4px 4px 0 #CFEAED;
     text-transform: uppercase;
@@ -118,35 +118,37 @@ h1 {
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
 }
-.tree {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid green;
-    left: 390px;
-    top: 135px;
+.griz {
+    background-image: url('../images/griz.png');
+    background-size: cover;
+    position: absolute;
+    z-index: 100;
+    height: 333px;
+    width: 275px;
+    left: 130px;
+    top: 125px;
 }
-.tree:before {
-    content:'';
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 40px solid green;
-    left: -40px;
-    top: 15px;
-}
-.tree:after {
-    content:'';
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 60px solid green;
-    left: -60px;
-    top: 40px;
+.gonch {
+    background-image: url('../images/gonch.jpg');
+    background-size: cover;
+    position: absolute;
+    z-index: 100;
+    height: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+
+    -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 /* tree, bottom side */
 .tree_bot {
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
     border-bottom: 80px solid green;
-    left: 330px;
+    left: 300px;
     top: 210px;
 }
 .tree_bot:before {
@@ -182,93 +184,17 @@ h1 {
     -moz-box-shadow: 0 0 5px #777;
     -webkit-box-shadow: 0 0 5px #777;
 }
-.red {
-    background-color: #c8171f;
-    background-image: -webkit-radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%);
-    background-image: -moz-radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%);
-    background-image: -o-radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%);
-    background-image: radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%);
 
-    left: 340px;
-    top: 325px;
-}
-.blue {
-    background-color: #00a1ee;
-    background-image: -webkit-radial-gradient(50% 50%, circle, #cde6f9, #00a1ee 70%);
-    background-image: -moz-radial-gradient(50% 50%, circle, #cde6f9, #00a1ee 70%);
-    background-image: -o-radial-gradient(50% 50%, circle, #cde6f9, #00a1ee 70%);
-    background-image: radial-gradient(50% 50%, circle, #cde6f9, #00a1ee 70%);
-}
-.green {
-    background-color: #4d8d00;
-    background-image: -webkit-radial-gradient(50% 50%, circle, #d1e5b2, #4d8d00 70%);
-    background-image: -moz-radial-gradient(50% 50%, circle, #d1e5b2, #4d8d00 70%);
-    background-image: -o-radial-gradient(50% 50%, circle, #d1e5b2, #4d8d00 70%);
-    background-image: radial-gradient(50% 50%, circle, #d1e5b2, #4d8d00 70%);
-
-    left: 440px;
-    top: 325px;
-}
-.rsmall, .gsmall, .bsmall {
-    height: 25px;
-    width: 25px;
-}
-.rsmall {
-    left: 440px;
-    top: 255px;
-}
-.bsmall {
-    left: 350px;
-    top: 255px;
-}
-.gsmall {
-    left: 395px;
-    top: 275px;
-}
-
-.rsmall1, .gsmall1, .bsmall1 {
-    height: 15px;
-    width: 15px;
-}
-.rsmall1 {
-    left: 403px;
-    top: 220px;
-}
-.bsmall1 {
-    left: 441px;
-    top: 210px;
-}
-.gsmall1 {
-    left: 365px;
-    top: 210px;
-}
-
-.rsmall2, .gsmall2, .bsmall2 {
-    height: 10px;
-    width: 10px;
-}
-.rsmall2 {
-    left: 380px;
-    top: 170px;
-}
-.bsmall2 {
-    left: 405px;
-    top: 180px;
-}
-.gsmall2 {
-    left: 430px;
-    top: 170px;
-}
 /* style the present */
 .present {
     background-image: url('../images/present.png');
     background-size: cover;
     position: absolute;
     z-index: 100;
-    height: 91px;
-    width: 120px;
-    left: 350px;
-    top: 405px;
+    height: 164px;
+    width: 216px;
+    left: 500px;
+    top: 290px;
 }
 .present a {
     display: block;
@@ -277,32 +203,23 @@ h1 {
    }
 
 /* style the star */
-.star {
-    background-image: url('../images/star.png');
-    background-size: cover;
-    position: absolute;
-    z-index: 100;
-    height: 25px;
-    width: 25px;
-    left: 398px;
-    top: 115px;
-}
+
 
 /* style the password form */
 .pass {
     position: absolute;
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgb(67, 186, 255);
     border-radius: 15px;
     z-index: 1000;
-    height: 130px;
+    height: 160px;
     width: 300px;
-    left: 250px;
-    top: 180px;
+    left: 450px;
+    top: 275px;
 }
 input {
     position: absolute;
     left: 30px;
-    top: 40px;
+    top: 75px;
     height:20px;
     width:220px;
     padding:5px 8px;
@@ -313,6 +230,7 @@ input {
 }
 .up{
     position: absolute;
+    color: #0048ce;
     left: 30px;
     top: 5px;
     height:20px;
@@ -324,7 +242,7 @@ input {
 .down{
     position: absolute;
     left: 30px;
-    top: 85px;
+    top: 115px;
     height:20px;
     width:220px;
     padding:5px 8px;
