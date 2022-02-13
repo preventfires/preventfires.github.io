@@ -1,0 +1,134 @@
+.title {
+    background-color: #e7e7e7;
+    width: 99%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.title2{
+    padding: 10px;
+    border-bottom: solid rgb(182, 182, 182);
+}
+.content {
+    position: absolute;
+    width: 99%;
+    height: 70%;
+    background-color: #b8b8b800;
+    border-radius: 5px;
+}
+
+/* Map block */
+.map {
+    background-color: #c2626200;
+    display: inline-block;
+    vertical-align:top;
+    width: 639px;
+    height: 100%;
+    margin: 5px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+ .scheme {
+    height: 438px;
+    width: 639px;
+    background-color: #EBEBEB;
+}
+.scheme svg {
+    position: absolute;
+    top: 45.5px;
+    left: 4.9px;
+    height: 438px;
+    width: 639px;
+}
+g path {
+    fill: #ffffff00;
+    cursor: pointer;
+}
+g:hover path {
+    fill: rgba(66, 66, 66, 0.288);
+}
+.active path {
+    fill: rgba(104, 104, 104, 0.555)!important;
+    stroke: rgba(255, 128, 44, 0.877);
+    stroke-width: 3px;
+}
+
+/* Month block */
+.month {
+    background-color: #00000000;
+    display: inline-block;
+    width: 150px;
+    height: 250px;
+    margin: 5px;
+}
+.temporalcell,.levelcell {
+    background-color: #cacaca;
+    border-radius: 5px;
+    width: 150px;
+    padding: 5px 0px;
+    margin: 2px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.activeMonth, .activeLevel {
+    background-color: rgba(104, 104, 104, 0.555);
+    border: 1px solid rgba(255, 128, 44, 0.877);
+}
+
+/* Explain block */
+.explain {
+    background-color: #00000000;
+    display: inline-block;
+    width: calc(99% - 639px - 150px - 30px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    vertical-align:top;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.activeTab {
+    display: block;
+}
+
+table.blueTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 0px 10px;
+  }
+  table.blueTable tbody td {
+    font-size: 14px;
+  }
+  table.blueTable thead {
+    background: #818181;
+    background: -moz-linear-gradient(top, #a0a0a0 0%, #8d8d8d 66%, #818181 100%);
+    background: -webkit-linear-gradient(top, #a0a0a0 0%, #8d8d8d 66%, #818181 100%);
+    background: linear-gradient(to bottom, #a0a0a0 0%, #8d8d8d 66%, #818181 100%);
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  table.blueTable tfoot td {
+    font-size: 15px;
+  }
+  table.blueTable tfoot .links {
+    text-align: right;
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
